@@ -43,7 +43,12 @@ class Calculator{
     float division(float operand_1,float operand_2){
         return(operand_1/operand_2);
     }
+// The `Square` function in the `Calculator` class takes a single float operand and returns the square
+// of that operand. It multiplies the operand by itself and returns the result.
 
+    float Square(float operand_1){
+        return(operand_1*operand_1);
+    }
     /**
      * The main function creates an instance of the Calculator class, performs addition, subtraction,
      * multiplication, and division operations on two operands, and prints the results.
@@ -60,5 +65,7 @@ class Calculator{
         System.out.println("Result is:"+mult_result);
         float div_result=calc.division(operand_1,operand_2);
         System.out.println("Result is:"+div_result);
+        float square_result=calc.Square(operand_1);
+        System.out.println("Result is:"+square_result);
     }
 }
