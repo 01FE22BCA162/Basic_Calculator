@@ -2,7 +2,7 @@
  * The Calculator class performs basic arithmetic operations such as addition, subtraction,
  * multiplication, and division on two float operands.
  */
-class Calculator{
+ class Calculator extends Arithmatic_Op{
     /**
      * The function "addition" takes two float operands and returns their sum.
      * 
@@ -53,19 +53,24 @@ class Calculator{
      * The main function creates an instance of the Calculator class, performs addition, subtraction,
      * multiplication, and division operations on two operands, and prints the results.
      */
+    
     public static void main(String[] args){
         Calculator calc=new Calculator();
         float operand_1=10;
         float operand_2=5;
         float add_result=calc.addition(operand_1,operand_2);
-        System.out.println("Result is:"+add_result);
+        System.out.println("Result of addition is:"+add_result);
         float sub_result=calc.substraction(operand_1,operand_2);
-        System.out.println("Result is:"+sub_result);
+        System.out.println("Result of subtraction is:"+sub_result);
         float mult_result=calc.Multiplication(operand_1,operand_2);
-        System.out.println("Result is:"+mult_result);
+        System.out.println("Result of multiplication is:"+mult_result);
         float div_result=calc.division(operand_1,operand_2);
-        System.out.println("Result is:"+div_result);
+        System.out.println("Result of division is:"+div_result);
         float square_result=calc.Square(operand_1);
-        System.out.println("Result is:"+square_result);
+        System.out.println("Result of square is:"+square_result);
+        float cube_result=calc.cube(operand_1);
+        System.out.println("Result of cube is:"+cube_result);
+        float modulus_result=calc.modulus(operand_1,operand_2);
+        System.out.println("Result of modulus is:"+modulus_result);
     }
 }
